@@ -1,0 +1,35 @@
+#left{
+    float: left;
+    display: flex;
+    position: absolute;
+}
+#container1{
+    margin: 40px 15px 0px 70px;
+}
+#container2
+{
+    margin-top: 50px;
+}
+#container2 {
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+#right{
+    float: right;
+    display: flex;
+    margin-left: 1050px;
+}
+#container4{
+    margin: 45px 60px 0px 15px;
+}
+#container3{
+    margin-top: 70px;
+}
+#container3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+

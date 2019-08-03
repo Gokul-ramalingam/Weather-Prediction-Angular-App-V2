@@ -1,0 +1,22 @@
+export const weatherDetails=[
+{city:'Bangalore',state:'Karnataka',
+clim:'Sunny',degh:35,degl:22,
+img:'assets/logos/sunny.svg',
+mon:{degree:32,celsius:22,image:'assets/logos/cloudy.svg'},
+tue:{degree:30,celsius:22,image:'assets/logos/humid.svg'},
+wed:{degree:35,celsius:22,image:'assets/logos/sunny.svg'},
+thu:{degree:28,celsius:22,image:'assets/logos/thunder.svg'},
+fri:{degree:31,celsius:22,image:'assets/logos/cloudy.svg'},
+sat:{degree:23,celsius:22,image:'assets/logos/rainy.svg'},
+sun:{degree:30,celsius:22,image:'assets/logos/cloudy.svg'}},
+{city:'Chennai',state:'Tamil Nadu',
+clim:'Cloudy',degh:33,degl:22,
+img:'assets/logos/cloudy.svg',
+mon:{degree:28,celsius:22,image:'assets/logos/thunder.svg'},
+tue:{degree:23,celsius:22,image:'assets/logos/rainy.svg'},
+wed:{degree:30,celsius:22,image:'assets/logos/cloudy.svg'},
+thu:{degree:32,celsius:22,image:'assets/logos/cloudy.svg'},
+fri:{degree:31,celsius:22,image:'assets/logos/cloudy.svg'},
+sat:{degree:30,celsius:22,image:'assets/logos/humid.svg'},
+sun:{degree:33,celsius:22,image:'assets/logos/sunny.svg'}}
+];

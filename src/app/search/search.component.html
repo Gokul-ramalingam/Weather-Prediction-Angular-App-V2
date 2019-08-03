@@ -1,0 +1,64 @@
+<div class="searchBar">
+    <input #city type="text" placeholder="Search place to predict weather" name="search" value="">
+    <img src="\assets\logos\search - icon.svg" alt="search icon" (click)='func(city.value);city.value=""'>
+</div>
+
+
+  <div class="details" *ngIf='flag'>
+      <div class="currentDay">
+        <b>{{climate.city}},</b>&nbsp;&nbsp;<span>{{climate.state}}</span>
+         <div class="date">{{today|date:'EEEE'}}&nbsp;&nbsp;&nbsp;{{today|date:'MM'}}&nbsp;{{today|date:'MMMM'}}</div>
+         <div class="currentWeather">
+          <img src="{{climate.img}}" alt="cloudy">
+          <span class="cloudy">{{climate.clim}}</span>
+          <b class="degree">{{climate.degh}}°</b>
+          <b class="degree1">{{climate.degl}}°</b>
+          <span class="flag">high</span>
+          <span class="flag1">low</span>
+         </div>
+         <div class="weekDays">
+              <div class="mon" [ngStyle]='dayCheck("Monday")?{"border": "solid 2px #ffffff"}:{"border": "none"}'>
+                <b class="day">MON</b>
+                 <img src="{{climate.mon.image}}" alt="cloudy">
+                 <b class="deg">{{climate.mon.degree}}°</b>
+                 <span class="deg1">{{climate.mon.celsius}}°</span>
+              </div>
+              <div class="tue" [ngStyle]='dayCheck("Tuesday")?{"border": "solid 2px #ffffff"}:{"border": "none"}'>
+                 <b class="day1">TUE</b>
+                 <img src="{{climate.tue.image}}" alt="rainy">
+                 <b class="deg">{{climate.tue.degree}}°</b>
+                 <span class="deg1">{{climate.tue.celsius}}°</span>
+              </div>
+              <div class="wed" [ngStyle]='dayCheck("Wednesday")?{"border": "solid 2px #ffffff"}:{"border": "none"}'>
+                <b class="day2">WED</b>
+                <img src="{{climate.wed.image}}" alt="rainy">
+                <b class="deg">{{climate.wed.degree}}°</b>
+                <span class="deg1">{{climate.wed.celsius}}°</span>
+              </div>
+              <div class="thurs" [ngStyle]='dayCheck("Thursday")?{"border": "solid 2px #ffffff"}:{"border": "none"}'>
+                <b class="day3">THU</b>
+                <img src="{{climate.thu.image}}" alt="rainy">
+                <b class="deg">{{climate.thu.degree}}°</b>
+                <span class="deg1">{{climate.thu.celsius}}°</span>
+              </div>
+              <div class="fri" [ngStyle]='dayCheck("Friday")?{"border": "solid 2px #ffffff"}:{"border": "none"}'>
+                <b class="day4">FRI</b>
+                <img src="{{climate.fri.image}}" alt="rainy">
+                <b class="deg">{{climate.fri.degree}}°</b>
+                <span class="deg1">{{climate.fri.celsius}}°</span>
+              </div>
+              <div class="sat" [ngStyle]='dayCheck("Saturday")?{"border": "solid 2px #ffffff"}:{"border": "none"}'>
+                  <b class="day5">SAT</b>
+                  <img src="{{climate.sat.image}}" alt="humid">
+                  <b class="deg">{{climate.sat.degree}}°</b>
+                  <span class="deg1">{{climate.sat.celsius}}°</span>
+              </div>
+              <div class="sun" [ngStyle]='dayCheck("Sunday")?{"border": "solid 2px #ffffff"}:{"border": "none"}'>
+                <b class="day6">SUN</b>
+                <img src="{{climate.sun.image}}" alt="humid">
+                <b class="deg">{{climate.sun.degree}}°</b>
+                <span class="deg1">{{climate.sun.celsius}}°</span>
+              </div>
+         </div>
+      </div>
+  </div>

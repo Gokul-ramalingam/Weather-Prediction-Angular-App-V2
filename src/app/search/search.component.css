@@ -1,0 +1,401 @@
+.searchBar input
+{
+   width: 88%;
+   height: 70px;
+   border-radius: 50px;
+   background:rgba(255, 255, 255, 0.3);
+   margin: 30px 50px 0px 60px;
+   padding-left: 35px;
+   font-size: 20px;
+   border: none;
+   outline: none;
+   color: #ffffff;
+}
+::placeholder{
+    color: #ffffff;
+    
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ffffff;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ffffff;
+  }
+#searchBar
+{
+  position: relative;
+  display: flex;
+}
+.searchBar img
+{
+  position: absolute;
+  margin: 39px 83px 0px 60px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  height: 25px;
+  right: 0;
+  background-color: rgb(65, 166, 248);
+}
+
+.details
+{
+height: 350px;
+width: 1140px;
+background:rgba(255, 255, 255, 0.3);
+margin: 60px 80px 0px 100px;
+border-radius: 15px;
+display: flex;
+}
+
+.currentDay
+{
+  margin: 80px 80px 0px 60px;
+}
+.currentDay b
+{
+  font-size: 16px;
+  font-family: Tahoma, Geneva, sans-serif;
+  color: #ffffff;
+}
+
+.currentDay span
+{
+  font-size: 16px;
+  font-family: Tahoma, Geneva, sans-serif;
+  color: rgb(240, 231, 231);
+} 
+
+.currentDay div.date
+{
+  color: #ffffff;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.currentWeather
+{
+   margin-top: 20px;
+   width: 165px;
+   height: 105px;
+   background: rgba(255, 255, 255, 0.1);
+   display: flex;
+   position:absolute;
+}
+
+.currentWeather img
+{
+  margin:35px 15px 0px 20px;
+  height:30px;
+}
+.currentWeather .cloudy
+{
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+.currentWeather .degree
+{
+  color: #ffffff;
+  margin-top: 45px;
+  margin-left: -35px;
+  font-size: 15px;
+}
+.currentWeather .degree1
+{
+  color: #ffffff;
+  margin-top: 45px;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+.currentWeather .flag
+{
+  font-size: 10px;
+  margin-top: 65px;
+  margin-left: -72px;
+  color: rgb(202, 199, 199);
+}
+
+.currentWeather .flag1
+{
+  font-size: 10px;
+  margin-top: 65px;
+  margin-left: 30px;
+  color: rgb(202, 199, 199);
+}
+
+.weekDays
+{
+  margin:20px 20px 0px 250px;
+  position: relative;
+  display: flex;
+}
+.weekDays .mon
+{
+  background: rgba(255, 255, 255, 0.1);
+  height: 105px;
+  width: 90px;
+  border-radius: 3px;
+  margin-right: 10px;
+  position: relative;
+  display: flex;
+}
+
+.weekDays .mon .day
+{
+  margin-top: 15px;
+  margin-left: 30px;
+  font-size: 13px;
+}
+ .weekDays .mon img{
+  margin-top: 40px;
+  margin-left:-28px;
+  height: 20px;
+} 
+.weekDays .mon .deg
+{
+   margin-left: -33px;
+   font-size: 13px;
+   margin-top: 70px;
+}
+
+.weekDays .mon .deg1
+{
+   margin-left: 5px;
+   margin-top: 70px;
+   font-size: 13px;
+}
+
+.weekDays .tue
+{
+  background: rgba(255, 255, 255, 0.1);
+  height: 105px;
+  width: 90px;
+  border-radius: 3px;
+  margin-right: 10px;
+  position: relative;
+  display: flex;
+}
+
+.weekDays .tue .day1
+{
+  margin-top: 15px;
+  margin-left: 30px;
+  font-size: 13px;
+}
+
+.weekDays .tue img{
+  margin-top: 40px;
+  margin-left: -25px;
+  height: 20px;
+}
+
+.weekDays .tue .deg
+{
+   margin-left: -30px;
+   margin-top: 70px;
+   font-size: 13px;
+}
+
+.weekDays .tue .deg1
+{
+   margin-left: 5px;
+   margin-top: 70px;
+   font-size: 13px;
+}
+
+.weekDays .wed
+{
+  background: rgba(255, 255, 255, 0.1);
+  height: 105px;
+  width: 90px;
+  border-radius: 3px;
+  margin-right: 10px;
+  position: relative;
+  display: flex;
+}
+
+.weekDays .wed .day2
+{
+  margin-top: 15px;
+  margin-left: 30px;
+  font-size: 13px;
+}
+
+.weekDays .wed img{
+  margin-top: 40px;
+  margin-left: -25px;
+  height: 20px;
+}
+
+.weekDays .wed .deg
+{
+   margin-left: -33px;
+   margin-top: 70px;
+   font-size: 13px;
+}
+
+.weekDays .wed .deg1
+{
+   margin-left: 5px;
+   margin-top: 70px;
+   font-size: 13px;
+}
+
+
+.weekDays .thurs
+{
+  background: rgba(255, 255, 255, 0.1);
+  height: 105px;
+  width: 90px;
+  border-radius: 3px;
+  margin-right: 10px;
+  position: relative;
+  display: flex;
+}
+
+
+.weekDays .thurs .day3
+{
+  margin-top: 15px;
+  margin-left: 30px;
+  font-size: 13px;
+}
+
+.weekDays .thurs img{
+  margin-top: 40px;
+  margin-left: -25px;
+  height: 20px;
+}
+
+.weekDays .thurs .deg
+{
+   margin-left: -33px;
+   margin-top: 70px;
+   font-size: 13px;
+}
+
+.weekDays .thurs .deg1
+{
+   margin-left: 5px;
+   margin-top: 70px;
+   font-size: 13px;
+} 
+
+.weekDays .fri
+{
+  background: rgba(255, 255, 255, 0.1);
+  height: 105px;
+  width: 90px;
+  border-radius: 3px;
+  margin-right: 10px;
+  position: relative;
+  display: flex;
+}
+
+.weekDays .fri .day4
+{
+  margin-top: 15px;
+  margin-left: 30px;
+  font-size: 13px;
+}
+
+.weekDays .fri img{
+  margin-top: 40px;
+  margin-left: -20px;
+  height: 20px;
+}
+
+.weekDays .fri .deg
+{
+   margin-left: -33px;
+   margin-top: 70px;
+   font-size: 13px;
+}
+
+.weekDays .fri .deg1
+{
+   margin-left: 5px;
+   margin-top: 70px;
+   font-size: 13px;
+} 
+
+.weekDays .sat
+{
+  background: rgba(255, 255, 255, 0.1);
+  height: 105px;
+  width: 90px;
+  border-radius: 3px;
+  margin-right: 10px;
+  position: relative;
+  display: flex;
+}
+
+.weekDays .sat .day5
+{
+  margin-top: 15px;
+  margin-left: 30px;
+  font-size: 13px;
+}
+
+.weekDays .sat img{
+  margin-top: 40px;
+  margin-left: -20px;
+  height: 20px;
+}
+
+.weekDays .sat .deg
+{
+   margin-left: -33px;
+   margin-top: 70px;
+   font-size: 13px;
+}
+
+.weekDays .sat .deg1
+{
+   margin-left: 5px;
+   margin-top: 70px;
+   font-size: 13px;
+} 
+
+
+.weekDays .sun
+{
+  background: rgba(255, 255, 255, 0.1);
+  height: 105px;
+  width: 90px;
+  border-radius: 3px;
+  margin-right: 10px;
+  position: relative;
+  display: flex;
+}  
+
+
+.weekDays .sun .day6
+{
+  margin-top: 15px;
+  margin-left: 30px;
+  font-size: 13px;
+}
+
+.weekDays .sun img{
+  margin-top: 40px;
+  margin-left: -25px;
+  height: 20px;
+}
+
+.weekDays .sun .deg
+{
+   margin-left: -33px;
+   margin-top: 70px;
+   font-size: 13px;
+}
+
+.weekDays .sun .deg1
+{
+   margin-left: 5px;
+   margin-top: 70px;
+   font-size: 13px;
+} 
