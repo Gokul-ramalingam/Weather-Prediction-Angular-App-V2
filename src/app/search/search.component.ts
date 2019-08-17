@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DetailsService } from '../details.service';
+import { Weather } from '../weather-data'
 
 @Component({
   selector: 'app-search',
@@ -21,9 +22,14 @@ export class SearchComponent implements OnInit {
 
   func(city)
   {
-     this.climate = this.detail.getWeather(city);
-     if(this.climate != null)
-      this.flag=true;
+    this.detail.getWeather(city).subscribe((data:Weather)=>{
+      this.climate = data;
+    //  console.log(this.climate);
+    },
+    error => this.flag=false
+    );
+    if(this.climate != null)
+     this.flag=true;
   }
 
   dayCheck(day)
